@@ -1,4 +1,4 @@
-import runGame from "./game-engine.js";
+import runGame from "../game-engine.js";
 import random from 'random';
 
 
