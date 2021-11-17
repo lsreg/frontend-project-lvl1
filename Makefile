@@ -1,4 +1,4 @@
-install: 
+install:
 	npm ci
 
 brain-games:
