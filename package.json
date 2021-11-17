@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/lsreg/frontend-project-lvl1#readme",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
+    "random": "^3.0.6",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
