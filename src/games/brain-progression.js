@@ -22,4 +22,4 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion);
+runGame(generateQuestion, 'What number is missing in the progression?');

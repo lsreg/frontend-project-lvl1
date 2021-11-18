@@ -15,9 +15,9 @@ function generateQuestion() {
   const number = random.int(10, 30);
 
   return {
-    question: `Is ${number} prime? (yes/no)`,
+    question: number.toString(),
     answer: isPrimeNumber(number) ? 'yes' : 'no',
   };
 }
 
-runGame(generateQuestion);
+runGame(generateQuestion, 'Answer "yes" if given number is prime. Otherwise answer "no".');

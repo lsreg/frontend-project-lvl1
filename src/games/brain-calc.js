@@ -18,4 +18,4 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion);
+runGame(generateQuestion, 'What is the result of the expression?');

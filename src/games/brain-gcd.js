@@ -22,9 +22,9 @@ function generateQuestion() {
   const second = random.int(10, 30);
 
   return {
-    question: `What is greatest common factor of ${first} and ${second}`,
+    question: `${first} ${second}`,
     answer: calculateGreatestCommonFactor(first, second).toString(),
   };
 }
 
-runGame(generateQuestion);
+runGame(generateQuestion, 'Find the greatest common divisor of given numbers.');
