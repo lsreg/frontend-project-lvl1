@@ -8,7 +8,7 @@ function generateQuestion() {
   const missing = random.int(1, count);
   let questionString = '';
 
-  for (let i = 1; i <= count; i++) {
+  for (let i = 1; i <= count; i += 1) {
     if (i === missing) {
       questionString += '.. ';
     } else {

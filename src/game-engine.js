@@ -7,7 +7,7 @@ export default function runGame(generateQuestion, gameDescription) {
   console.log(`Hello, ${name}!`);
   console.log(gameDescription);
 
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= 3; i += 1) {
     const task = generateQuestion();
     console.log(`Question: ${task.question}`);
     const answer = readlineSync.question('Your answer: ');

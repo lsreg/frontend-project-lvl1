@@ -8,7 +8,7 @@ function calculateGreatestCommonFactor(first, second) {
     min = second;
   }
 
-  for (let i = 2; i <= min; i++) {
+  for (let i = 2; i <= min; i += 1) {
     if ((first % i === 0) && (second % i === 0)) {
       result = i;
     }
