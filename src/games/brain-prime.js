@@ -11,7 +11,7 @@ function isPrimeNumber(number) {
   return true;
 }
 
-function generateQuestion() {
+function generateQuestionAndAnswer() {
   const number = random.int(10, 30);
 
   return {
@@ -20,4 +20,6 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+export default function startGame() {
+  runGame(generateQuestionAndAnswer, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+}

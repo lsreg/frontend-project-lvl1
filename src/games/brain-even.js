@@ -1,7 +1,7 @@
 import random from 'random';
 import runGame from '../game-engine.js';
 
-function generateQuestion() {
+function generateQuestionAndAnswer() {
   const number = random.int(1, 20);
   return {
     question: number.toString(),
@@ -9,4 +9,6 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion, 'Answer "yes" if the number is even, otherwise answer "no".');
+export default function startGame() {
+  runGame(generateQuestionAndAnswer, 'Answer "yes" if the number is even, otherwise answer "no".');
+}

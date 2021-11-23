@@ -17,7 +17,7 @@ function calculateGreatestCommonFactor(first, second) {
   return result;
 }
 
-function generateQuestion() {
+function generateQuestionAndAnswer() {
   const first = random.int(10, 30);
   const second = random.int(10, 30);
 
@@ -27,4 +27,6 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion, 'Find the greatest common divisor of given numbers.');
+export default function startGame() {
+  runGame(generateQuestionAndAnswer, 'Find the greatest common divisor of given numbers.');
+}

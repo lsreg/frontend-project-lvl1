@@ -7,10 +7,10 @@ function multiply(a, b) { return a * b; }
 const signMarks = ['+', '-', '*'];
 const signFunctions = [sum, diff, multiply];
 
-function generateQuestion() {
+function generateQuestionAndAnswer() {
   const first = random.int(1, 20);
   const second = random.int(1, 20);
-  const sign = random.int(0, 2);
+  const sign = random.int(0, signMarks.length - 1);
 
   return {
     question: `${first} ${signMarks[sign]} ${second}`,
@@ -18,4 +18,6 @@ function generateQuestion() {
   };
 }
 
-runGame(generateQuestion, 'What is the result of the expression?');
+export default function startGame() {
+  runGame(generateQuestionAndAnswer, 'What is the result of the expression?');
+}
